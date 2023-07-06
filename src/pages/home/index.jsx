@@ -135,7 +135,7 @@ export const Home = () => {
         <div className="flex gap-[20px] min-[300px]:max-lg:flex-col-reverse  ">
           <div
             id="contentprimary"
-            className="overflow-y-auto mb-[20px] gap-2 flex max-w-[583px]  max-h-[600px]"
+            className="overflow-y-auto mb-[20px] gap-2 flex max-w-[583px] min-w-[598px] max-h-[600px] min-[300px]:max-lg:min-w-[280px]"
           >
             <ul className="flex flex-col mb-2">
               {users.map((user) => {
@@ -182,9 +182,9 @@ export const Home = () => {
                         <h2 className="text-gray-600 font-bold pl-1">
                           Mensagem
                         </h2>
-                        <li className="border-[2px] max-w-[420px] rounded-lg text-gray-600 p-4">
+                        <p className="border-[2px] max-w-[420px] rounded-lg text-gray-600 p-4">
                           {user.recado}
-                        </li>
+                        </p>
                         <div className=" flex  items-center justify-end mr-4 mt-[-13px]">
                           {/* Contador de likes */}
                           <span className="bg-slate-100 text-gray-600 mr-1 flex items-center">
